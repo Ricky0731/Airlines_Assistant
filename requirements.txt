@@ -1,0 +1,20 @@
+# RAG pipeline dependencies
+langchain
+langchain-core
+langchain-text-splitters
+langchain-groq
+langchain-community        # PyMuPDFLoader + BM25Retriever
+langchain-classic          # EnsembleRetriever, create_stuff_documents_chain
+langchain-huggingface      # HuggingFaceEmbeddings
+langchain-chroma           # Chroma vector store
+sentence-transformers      # all-MiniLM-L6-v2 embeddings
+chromadb                   # local ChromaDB backend
+huggingface-hub
+python-dotenv              # .env loader
+pymupdf                    # PyMuPDF PDF parsing engine
+rank-bm25                  # BM25 algorithm (required by BM25Retriever)
+
+# API Server
+fastapi                    # FastAPI framework
+uvicorn[standard]          # ASGI server for FastAPI
+pydantic                   # Data validation
